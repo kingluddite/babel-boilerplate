@@ -1,0 +1,22 @@
+/* box sizing rules - https://css-tricks.com/box-sizing/ */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  background: #2b292e;
+  color: #fafafa;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  justify-content: center;
+  min-height: 100vh;
+}

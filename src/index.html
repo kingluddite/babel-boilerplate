@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+
+  <!-- generate your custom favicon &#45; https://favicon.io/favicon&#45;generator/ -->
+  <!-- <link rel="manifest" href="./assets/img/site.webmanifest"> -->
+  <!-- <link rel="apple&#45;touch&#45;icon" sizes="180x180" href="./assets/img/apple&#45;touch&#45;icon.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon&#45;32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon&#45;16x16.png"> -->
+
+  <!-- <link rel="stylesheet" href="/assets/css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
+  <base href="/">
+  <link type="text/css" href="/assets/css/bundle.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+        <header class="header">
+          <div class="container">
+            <h1 class="header__title">Todo App</h1>
+            <h2 class="header__subtitle">What do you need to do?</h2>
+          </div>
+        </header>
+        
+        <div class="actions">
+          <div class="actions__container">
+            <input id="search-text" class="input" type="text" placeholder="Filter todos" />
+            <label class="checkbox">
+                <input type="checkbox" id="hide-completed"> Hide completed
+            </label>
+          </div>
+          <!-- /.actions__container -->
+        </div>
+        <!-- /.actions -->
+
+        <div class="container">
+          <div id="todos"></div>
+          <form id="new-todo">
+              <input type="text" class="input" placeholder="Something to do" name="text">
+              <button class="button">Add Todo</button>
+          </form>
+        </div>
+        <!-- /.container -->
+       
+<script src="/bundle.js"></script>
+</body>
+</html>
