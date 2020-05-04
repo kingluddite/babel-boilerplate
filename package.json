@@ -17,7 +17,6 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
-    "live-server": "^1.2.1",
     "uuid": "^7.0.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
